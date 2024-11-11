@@ -56,6 +56,13 @@ build CMakeFiles/CSV.dir/library.cpp.obj: CXX_COMPILER__CSV_unscanned_Debug G$:/
   OBJECT_DIR = CMakeFiles\CSV.dir
   OBJECT_FILE_DIR = CMakeFiles\CSV.dir
 
+build CMakeFiles/CSV.dir/test.cpp.obj: CXX_COMPILER__CSV_unscanned_Debug G$:/Libraries/CSV/test.cpp || cmake_object_order_depends_target_CSV
+  DEFINES = -DCSV_EXPORTS
+  DEP_FILE = CMakeFiles\CSV.dir\test.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\CSV.dir
+  OBJECT_FILE_DIR = CMakeFiles\CSV.dir
+
 
 # =============================================================================
 # Link build statements for SHARED_LIBRARY target CSV
@@ -64,7 +71,7 @@ build CMakeFiles/CSV.dir/library.cpp.obj: CXX_COMPILER__CSV_unscanned_Debug G$:/
 #############################################
 # Link the shared library libCSV.dll
 
-build libCSV.dll libCSV.dll.a: CXX_SHARED_LIBRARY_LINKER__CSV_Debug CMakeFiles/CSV.dir/library.cpp.obj
+build libCSV.dll libCSV.dll.a: CXX_SHARED_LIBRARY_LINKER__CSV_Debug CMakeFiles/CSV.dir/library.cpp.obj CMakeFiles/CSV.dir/test.cpp.obj
   LANGUAGE_COMPILE_FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\CSV.dir

@@ -5,4 +5,5 @@ project(CSV)
 set(CMAKE_CXX_STANDARD 20)
 
 # Add a shared library target
-add_library(CSV SHARED library.cpp)
+add_library(CSV SHARED library.cpp
+)

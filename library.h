@@ -6,7 +6,9 @@
 #else
     #define EXPORT
 #endif
+#include <vector>
+#include <string>
 
-EXPORT // UNFUNISINUSHED
+EXPORT std::vector<std::string> parse(const std::string *inputFile, const char *delimiter);
 
 #endif //CSV_LIBRARY_H
