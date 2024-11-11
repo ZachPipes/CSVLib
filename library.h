@@ -11,4 +11,6 @@
 
 EXPORT std::vector<std::string> parse(const std::string *inputFile, const char *delimiter);
 
+EXPORT void print(const std::vector<std::string>& inputFile);
+
 #endif //CSV_LIBRARY_H

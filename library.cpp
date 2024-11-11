@@ -56,6 +56,6 @@ std::vector<std::string> parse(const std::string& fileName, const char delimiter
 // Add function for a single entry in csv file
 
 // Prints entire csv file to the console
-void print(std::vector<std::string> inputFile) {
+void print(const std::vector<std::string>& inputFile) {
 
 }
